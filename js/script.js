@@ -2,15 +2,15 @@ let randomNumber = Math.floor(Math.random() * 3 + 1);
 
 console.log('Wylosowana liczba to: ' + randomNumber);
 
-let computerMove = getMoveName(randomNumber);
+let computerMove = 'nieznany ruch';
 
-/*if (randomNumber == 1) {
+if (randomNumber == 1) {
   computerMove = 'kamień';
 } else if (randomNumber == 2) {
   computerMove = 'papier';
 } else if (randomNumber == 3) {
   computerMove = 'nożyce';
-}*/
+}
 
 printMessage('Mój ruch to: ' + computerMove); //czy to ma zostać?
 
@@ -46,6 +46,6 @@ if (computerMove == 'kamień' && playerMove == 'papier') {
   printMessage('remis!');
 } else if (computerMove == 'papier' && playerMove == 'papier') {
   printMessage('remis!');
-} else(computerMove == 'nożyce' && playerMove == 'nożyce') {
+} else if(computerMove == 'nożyce' && playerMove == 'nożyce') {
   printMessage('remis!');
 }
