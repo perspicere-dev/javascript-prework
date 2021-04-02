@@ -1,7 +1,7 @@
 
 function playGame(playerInput) {
   console.log('Wywołano funkcję playGame z argumentem playerInput')
-  //let playerInput
+  
   let randomNumber = Math.floor(Math.random() * 3 + 1);
   console.log('Wylosowana liczba to: ' + randomNumber);
 
