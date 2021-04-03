@@ -1,0 +1,50 @@
+body {
+  margin: 0 auto;
+  text-align: center;
+}
+h1{
+  margin: 0;
+  padding: 40px;
+}
+h2{
+  margin: auto;
+}
+.buttons {
+  margin: 20px auto;
+  width: 70%;
+  height: 40%;
+  text-align: center;
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
+.far {
+  font-size: 4rem;
+  cursor: pointer;
+  margin: 20px 50px;
+  background: teal;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 70px;
+  padding: 30px;
+
+  &:hover {
+    background-color: grey;
+    transform: scale(1.2);
+  }
+}
+
+.container {
+  height: 100vh;
+  position: relative;
+  font-size: 1.2rem;
+  font-family: "Lucida Console", "Courier New", monospace;
+  font-weight: 900;
+  background-image: url("https://images.pexels.com/photos/411207/pexels-photo-411207.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500");
+  background-size: cover;
+}
