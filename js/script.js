@@ -1,14 +1,14 @@
-function playGame(playerInput) {
+{function playGame(playerInput) {
   console.log('Wywołano funkcję playGame z argumentem playerInput')
 
-  clearMessages() 
+  clearMessages()
     console.log('Wywołano funkcję clearMessages');
 
 
-  let randomNumber = Math.floor(Math.random() * 3 + 1);
+  const randomNumber = Math.floor(Math.random() * 3 + 1);
   console.log('Wylosowana liczba to: ' + randomNumber);
 
-  let computerMove = getMoveName(randomNumber);
+  const computerMove = getMoveName(randomNumber);
   printMessage('Mój ruch to: ' + computerMove);
 
   function getMoveName(argMoveId) {
@@ -16,7 +16,7 @@ function playGame(playerInput) {
     if (argMoveId == 1) {
       return 'kamień';
     } else if (argMoveId == 2) {
-      return 'papier';
+      return 'papier';``
     } else if (argMoveId == 3) {
       return 'nożyce';
     } else {
@@ -29,7 +29,7 @@ function playGame(playerInput) {
   console.log('Gracz wpisał: ' + playerInput);
 
 
-  let playerMove = getMoveName(playerInput);
+  const playerMove = getMoveName(playerInput);
 
   printMessage('Twój ruch to: ' + playerMove);
   displayResult(playerMove, computerMove); // do tego nie doszedłem sam. Z opisu modułu bym tego nie zrobił. Podejrzałem w necie.
@@ -61,3 +61,4 @@ document.getElementById('play-paper').addEventListener('click', function() {
 document.getElementById('play-scissors').addEventListener('click', function() {
   playGame('3');
 });
+}
